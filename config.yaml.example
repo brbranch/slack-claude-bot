@@ -1,0 +1,23 @@
+# Slack設定
+slack:
+  botToken: ${SLACK_BOT_TOKEN}  # 環境変数から取得するため変更しない
+  pollingInterval: 10000  # ポーリング間隔（ミリ秒）
+
+# プロジェクト設定
+# プロジェクト名とディレクトリパスのマッピング
+projects:
+  my-project: /path/to/your/project
+  # another-project: /path/to/another/project
+
+# チャンネル設定
+# チャンネルIDとデフォルトプロジェクトの紐付け（オプション）
+channels:
+  # C0123456789: my-project
+
+# Claude設定（オプション）
+claude:
+  # Claudeに与える事前知識（システムプロンプト）
+  systemPrompt: |
+    あなたはSlack経由で呼び出されています。
+    ユーザーはSlackのメッセージでリクエストを送信しています。
+    回答は簡潔に、Slackで読みやすい形式で返してください。

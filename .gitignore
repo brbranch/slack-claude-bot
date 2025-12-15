@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Claude Code settings (contains webhook URLs and personal settings)
+.claude/settings.json
+
+# Build output
+dist/
+
+# Environment variables (contains secrets)
+.env
+
+# Configuration (contains personal paths and channel IDs)
+config.yaml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temporary files
+tmp/
+temp/
+*.tmp
